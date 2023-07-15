@@ -1,10 +1,9 @@
-﻿#Requires AutoHotkey v2.0-a
+#Requires AutoHotkey v2.0-a
 
 ;;;;;; Hotkey to exit script (ctrl 5) ;;;;;;
 ^5::{ ; CTRL+5
 ExitApp
 }
-
 CoordMode "Pixel", "Screen"
 
 Loop{
@@ -33,6 +32,8 @@ try
 		;MouseClick "left", taskIconX, taskIconY
 		taskIconCoords := "x" taskIconX " y" taskIconY
 		Click taskIconX, taskIconY, "left"
+		; Moves the mouse so it doesnt hover over the task button
+		MouseMove  50, 0, 0, "R"
 		;MsgBox "Click sent to: " taskIconCoords
 	}
 	
