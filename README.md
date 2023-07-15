@@ -1,6 +1,9 @@
 # EmpearlAutoTasker
 AutoHotKey script to automate tasking in the Empearl OT Server
 
+**Note**
+To exit script while running, press CTRL-5
+
 **Requirements:**
 * Requires AutoHotKey Version 2 installed on your computer (https://www.autohotkey.com/)
 * All of the image files (*.bmp) and the script file (EmpearlAutoTasker) downloaded and added to the same folder
@@ -10,3 +13,8 @@ AutoHotKey script to automate tasking in the Empearl OT Server
 
 
 
+**Logical flow of the script**
+1. Find the coordinates for the task icon in the top right corner of the screen
+2. Check if the task window is open, if not open it
+3. Check if task is finsihed, if yes, click "Finish"
+4. check if new task is startable, if yes click "Start"
