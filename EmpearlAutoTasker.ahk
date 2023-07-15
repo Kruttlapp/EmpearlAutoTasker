@@ -5,9 +5,6 @@
 ExitApp
 }
 
-;;;;;; SET THIS WINDOW TITLE ;;;;;;
-windowTitle := "Tibia - Krissyb"
-
 CoordMode "Pixel", "Screen"
 
 Loop{
